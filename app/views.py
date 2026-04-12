@@ -55,7 +55,7 @@ def movies():
             }), 201
             
         # If the validation fails, return a list of errors in JSON format
-        return jsonify({"errors": form_errors(form)}), 404
+        return jsonify({"errors": form_errors(form)}), 400
     
     
 ###
