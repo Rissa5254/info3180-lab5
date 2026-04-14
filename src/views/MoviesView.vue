@@ -41,6 +41,44 @@
 }
 
 .movie-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 70px;
+    margin: 15px 50px 10px 50px;
+}
 
+.movie{
+    width: auto;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    height: 300px;
+}
+
+.movie img{
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.movie-details{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.title-details{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.description-details{
+    line-height: 1.5;
 }
 </style>
