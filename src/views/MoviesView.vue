@@ -2,9 +2,14 @@
     <h2 class="view-movies">Movies</h2>
     <div class="movie-list">
         <div class="movie" v-for="movie in movies" :key="movie.id">
-          <img :src="'/api/v1/posters/' + movie.poster" alt="Movie Poster" />
-          <h3>{{ movie.title }}</h3>
-          <p>{{ movie.description }}</p>
+            
+            <img :src="'/api/v1/posters/' + movie.poster" alt="Movie Poster" />
+          
+            <div class="movie-details">
+                <h3 class="title-details">{{ movie.title }}</h3>
+                <p class="description-details">{{ movie.description }}</p>
+            </div>
+         
         </div>
     </div>
 
@@ -28,3 +33,14 @@
         fetchMovies(); 
     }); 
 </script>
+
+<style>
+.view-movies{
+    margin: 15px 50px 10px 50px;
+    font-size: 24px;
+}
+
+.movie-list{
+
+}
+</style>
