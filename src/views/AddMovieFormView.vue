@@ -3,8 +3,8 @@ import MovieForm from '@/components/MovieForm.vue';
 </script>
 
 <template>
-    <div>
-        <h1>Add movie</h1>
+    <div class="add-movie">
+        <h2>Upload Form</h2>
         <MovieForm />
     </div>
 </template>
