@@ -132,9 +132,10 @@
 .success{
     background-color: rgb(87, 219, 87);
     border-radius: 5px;
-    color: wheat;
+    color: white;
     font-size: 14px;
-    padding: 5px 10px;
+    padding: 12px;
+    margin-bottom: 15px;
 }
 
 .error{
